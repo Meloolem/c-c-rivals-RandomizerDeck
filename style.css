@@ -50,6 +50,20 @@ main{
        }
 
 }
+@media (max-width: 547px) { 
+    .wrapper {
+        width: 540px;
+    } 
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 500px; /* Ширина макета */
+       }
+       .content {
+        margin: 0 170px 0 80px; /* Отступ на ширину левой и правой колонки*/
+       }
+
+}
 .content {
     display: flex;
     flex-direction: column;
