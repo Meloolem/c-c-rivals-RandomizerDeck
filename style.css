@@ -1,3 +1,54 @@
+.wrapper {
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: #ccb;
+}
+/* Для больших экранов */
+@media (min-width: 980px) { 
+    .wrapper {
+        width: 1080px;
+    }
+    .content {
+        margin: 0 300px 0 200px; /* Отступ на ширину левой и правой колонки*/
+       }
+    .container {
+        width: 900px; /* Ширина макета */
+        margin: 0 auto; /* Выравнивание по центру */
+       }
+}
+ 
+/* Для некоторых нетбуков и планшетов (таблеток) */
+@media (max-width: 979px) { 
+    .wrapper {
+        width: 880px;
+    }
+    .content {
+        margin: 0 230px 0 150px; /* Отступ на ширину левой и правой колонки*/
+       }
+    .container {
+        width: 800px; /* Ширина макета */
+       }
+}
+
+/* Для планшетов и некоторых телефонов */
+@media (max-width: 767px) { 
+    .wrapper {
+        width: 750px;
+    } 
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 650px; /* Ширина макета */
+       }
+       .content {
+        margin: 0 190px 0 90px; /* Отступ на ширину левой и правой колонки*/
+       }
+
+}
+.content {
+    display: flex;
+    flex-direction: column;
+   }
 html,body {
     height: 100%;
     min-width: 100%;
@@ -8,31 +59,12 @@ footer{
     background-color: black;
 }
 footer .container__text{
-    display: inline-block;
+    text-align: center!important;
+    font-weight: 500;
+    font-size: 22px;
     color: aliceblue;
 }
-.wrapper {
-    width: 1080px;
-    margin: 0 auto;
-    min-height: 100%;
-    background-color: #ccb;
-}
-.container {
-    width: 900px; /* Ширина макета */
-    margin: 0 auto; /* Выравнивание по центру */
-   }
-   .nav {
-    width: 200px; /* Ширина левой колонки */
-    float: left;
-   }
-   .aside {
-    width: 300px; /* Ширина правой колонки */
-    float: right;
-   }
-   .content {
-    flex-direction: column;
-    margin: 0 300px 0 200px; /* Отступ на ширину левой и правой колонки*/
-   }
+
    ._blok{
     padding-bottom: 5px;
     display: flex;
@@ -58,9 +90,13 @@ color: #000000;
     color: #270000d7;
 }
 
-
+#commander{
+    width: 70px;
+    height: 80px;
+}
 
 #button-random {
+    width: 200px;
     margin: 20px 0 ;
     position: relative;
     display: inline-block;

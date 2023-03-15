@@ -7,9 +7,8 @@ let units = document.querySelector("#units");
 let fraction__choise = document.querySelector("#fraction__choise");
 
 let fraction;
-let сGDI = ['Стронрам','Ляйн','Манкил','Саломон','Джексон'];
-
-let сNOD = ['Сет','Кейн','Джейд','Оксана'];
+let сGDIimg = ['./img/Strongarm_card.webp','./img/Liang_card.webp','./img/McNeil_card.webp','./img/Solomon_card.webp','./img/Jackson_card.webp'];
+let сNODimg = ['./img/Seth_card.webp','./img/Kane_card.webp','./img/Jade_card.webp','./img/Oxanna_card.webp'];
 
 document.querySelector("#button-random").onclick = function(){
     let uGDI = ['Стрелки','Взвод РПГ','Пулемётчики','Реактивная пехота','Группа Удар','Снайперы','Гренадер','Псы войны','Носорог','МЦП','Пидбуль','Громовержец','Торнадо','РС30','Танк Хищник','БТР','Таран','Рой доронов','Беркут','Штурмовик Могавк','Вепрь','Косатка','Молот','Бомбордировщик Косатка','Росомаха','Дезинтегратор','Джагернаут','Сокрушитель','Кадьяк','Самум','Титан','Танк Мамонт'];
@@ -20,11 +19,11 @@ document.querySelector("#button-random").onclick = function(){
 
     if(fraction == 'ГСБ') {
       fraction__choise.textContent = 'ГСБ';
-      commander.textContent = сGDI[random(0,4)]
+      commander.src = сGDIimg[random(0,4)]
     } 
     else{
       fraction__choise.textContent = 'НОД';
-      commander.textContent = сNOD[random(0,3)]
+      commander.src = сNODimg[random(0,3)]
     }
 
     if(fraction == 'ГСБ') {
