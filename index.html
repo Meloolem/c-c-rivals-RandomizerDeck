@@ -11,20 +11,29 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
+
 <body>
-    <footer class="container"> <p class="container__text">🐾Рандомайзер🐾</p> 
-    </footer>
-    <div class="container">
-        <div class="content _blok">
-            <button id="button-random">Генерировать</button>
-            <div class="fraction _blok"><p class="fraction__title">Фракция:</p><p id="fraction__choise"></p></div>
-            <div class="commander_blok _blok"><p class="commander__title">Командир:</p> <img src="./img/Common_cards.webp" alt="Командир" id="commander"> 
-                <!-- <p id="commander"></p> -->
+    <div class="wrapper">
+        <header class="container"> <p class="container__text">🐾Рандомайзер🐾</p> 
+        </header>
+
+        <main class="container">
+            <div class="content _blok">
+                <button id="button-random">Генерировать</button>
+                <div class="fraction _blok"><p class="fraction__title">Фракция:</p><p id="fraction__choise"></p></div>
+                <div class="commander_blok _blok"><p class="commander__title">Командир:</p> <img src="./img/Common_cards.webp" alt="Командир" id="commander"> 
+                    <!-- <p id="commander"></p> -->
+                </div>
+                
+                <p id="units"></p>
             </div>
-            
-            <p id="units"></p>
-        </div>
-       </div>
+           </main>
+
+        <footer class="container"> 
+            <a href="https://discord.gg/TzpnM3P3Jq" class="footer-link">Наш дискорд: <img class="footer-link-img" src="./img/discord_icon_130958.svg"></a>
+        </footer>
+    </div>
+    
     <script src="main.js"></script>
 </body>
 </html>
