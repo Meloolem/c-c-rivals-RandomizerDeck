@@ -56,7 +56,7 @@ main{
 
 }
 /* Для некоторых нетбуков и планшетов (таблеток) */
-@media screen and (max-width : 1000px) {
+@media screen and (max-width : 1015px) {
     .wrapper {
         width: 700px;
     } 
@@ -70,7 +70,7 @@ main{
        }
 
 }
-@media screen and (max-width : 660px) {
+@media screen and (max-width : 700px) {
     .wrapper {
         width: 400px;
     } 
@@ -105,6 +105,8 @@ footer{
     padding: 10px;
     background: linear-gradient(rgb(15, 15, 16), rgb(43 43 43)) rgb(23, 23, 23);
     border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: right;
 }
 .footer-link{
     margin-bottom: 10px;
